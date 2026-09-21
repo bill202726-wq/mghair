@@ -23,7 +23,8 @@ export default function Logo({ sizeClasses = "w-10 h-10", defaultClasses = "bg-e
     };
   }, []);
 
-  const src = logoData || (!imgError ? 'https://chelha.net/wp-content/uploads/2026/09/Logo.png' : null);
+  // Utilisation de l'image locale '/Logo-AAPI.png' depuis le dossier public
+  const src = logoData || (!imgError ? '/Logo-AAPI.png' : null);
 
   if (src) {
     return (
